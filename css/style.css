@@ -34,14 +34,16 @@ body {
 .header__ul {
     display: flex;
     list-style-type: none;
-    gap: 35px;
+    /*gap: 35px;*/
+    /* Не работает в сафари :( */
     margin: 0;
-    padding: 0;
+    padding: 0 10px;
     width: 100%;
 }
 .header__ul__li {
     display: flex;
     align-self: center;
+    padding-left: 35px;
 }
 .header__ul__li__a {
     text-decoration: none;
@@ -52,6 +54,7 @@ body {
 }
 .header__ul__li-logo {
     margin-right: auto;
+    display: flex;
 }
 .header__ul__li__logo {
     display: inline-flex;
@@ -59,7 +62,6 @@ body {
 .header__ul__li__a__logo {
     height: 64px;
     transition: all .15s ease-in-out;
-    margin: 5px;
 }
 .header__ul__li__a__logo:hover {
     background: #eee3;
@@ -77,6 +79,10 @@ body {
 }
 .header-scrolled .header__ul__li__a__logo {
     height: 32px;
+}
+.header-scrolled .header__burger-button {
+    height: 32px;
+    width: 32px;
 }
 .undreline-animation:before {
     right: 50%;
@@ -100,8 +106,8 @@ body {
     margin: 100px auto;
 }
 .label-container {
-    /*height: 566px;*/
-    height: 100%;
+    height: 566px;
+    /*height: 100%;*/
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -149,6 +155,25 @@ body {
 .footer__block__article__ul__li__a:hover {
     text-decoration: underline;
 }
+.header__burger-button {
+    background: none;
+    color: white;
+    border: none;
+    display: none;
+    height: 50px;
+    width: 50px;
+    transition: all .15s ease-in-out;
+    margin: auto 0 auto auto;
+}
+.header-mobile__ul__li-logo {
+    display: none;
+}
+.header-mobile {
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
 
 @media (max-width: 768px) {
     .footer-container {
@@ -167,5 +192,41 @@ body {
     }
     .footer {
         padding: 15px;
+    }
+}
+
+.showNav {
+    transform: translateX(0) !important;
+}
+
+@media (max-width: 570px) {
+    .header__burger-button {
+        display: block;
+    }
+    .header {
+        transform: translateX(100%);
+        position: absolute;
+        background: #232323;
+        font-size: 15pt !important;
+        margin-top: 10px;
+    }
+    .header__ul {
+        display: block;
+    }
+    .header__ul__li {
+        padding: 10px 0;
+    }
+    .header__ul__li-logo {
+        display: none;
+    }
+    .header__ul__li__a {
+        width: 100%;
+        text-align: center;
+    }
+    .header-background {
+        background: #333;
+    }
+    .header-mobile__ul__li-logo {
+        display: flex;
     }
 }
