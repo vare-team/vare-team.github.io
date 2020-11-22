@@ -84,7 +84,7 @@ body {
     height: 32px;
     width: 32px;
 }
-.undreline-animation:before {
+.underline-animation:before {
     right: 50%;
     transform: translateX(50%);
     content: "";
@@ -95,7 +95,7 @@ body {
     bottom: 0;
     transition: all .15s ease-in-out;
 }
-.undreline-animation:hover:before {
+.underline-animation:hover:before {
     width: 100%;
 }
 .main {
@@ -164,6 +164,7 @@ body {
     width: 50px;
     transition: all .15s ease-in-out;
     margin: auto 0 auto auto;
+    cursor: pointer;
 }
 .header-mobile__ul__li-logo {
     display: none;
@@ -173,6 +174,10 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 0 10px;
+}
+
+.showNav {
+    transform: translateX(0) !important;
 }
 
 @media (max-width: 768px) {
@@ -193,10 +198,6 @@ body {
     .footer {
         padding: 15px;
     }
-}
-
-.showNav {
-    transform: translateX(0) !important;
 }
 
 @media (max-width: 570px) {
