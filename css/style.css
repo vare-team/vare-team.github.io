@@ -8,8 +8,9 @@ body {
     padding: 0;
     width: 100%;
     height: 100%;
-    background: url("../assets/bg.svg") #678ADE;
-    background-size: 128px;
+    background: #232333;
+    /*background: url("../assets/bg.svg") #678ADE;*/
+    /*background-size: 128px;*/
 }
 .body-wrapper {
     min-height: 100%;
@@ -199,15 +200,15 @@ body {
 
 .projects {
     /*width: 260px;*/
-    height: 400px;
+    /*height: 400px;*/
     display: flex;
     flex-direction: column;
-    background: #232323;
-    border-radius: 20px;
-    box-shadow: #3339 0 6px 15px;
+    background: #FFFFFF;
+    color: #000000;
+    border-radius: 20px 20px 10px 10px;
+    /*box-shadow: #3339 0 6px 15px;*/
 }
 .projects__head {
-    border-bottom: #fff 3px solid;
     position: relative;
 }
 .projects__head-img {
@@ -216,6 +217,8 @@ body {
     display: flex;
     border-radius: 15px 15px 0 0;
     object-fit: cover;
+    border: #FFFFFF 4px solid;
+    box-sizing: border-box;
 }
 .projects__head-icon {
     width: 86px;
@@ -226,6 +229,7 @@ body {
     left: 50%;
     transform: translateX(-50%);
     border: #ffffff 5px solid;
+    background: #FFFFFF;
 }
 .projects__body {
     padding: 15px;
@@ -244,19 +248,36 @@ body {
 }
 .projects__bottom {
     margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    flex-flow: wrap;
 }
 .projects__bottom-a {
     display: block;
     width: 100%;
     background: #678ADE;
-    border-radius: 0 0 15px 15px;
+    border-radius: 10px;
     padding: 7px 0;
     text-decoration: none;
     color: #FFFFFF;
     text-align: center;
+    margin: 5px;
 }
 .projects__bottom-a:hover {
     background: #4E71C4;
+}
+.projects__bottom-a-git {
+    background: #000000;
+    color: #FFFFFF;
+}
+.projects__bottom-a-git:hover {
+    background: #111111;
+}
+.projects__bottom-hint {
+    font-size: 12px;
+    opacity: .5;
+    text-align: center;
+    width: 100%;
 }
 
 @media (max-width: 768px) {
