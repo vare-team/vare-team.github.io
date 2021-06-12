@@ -17,6 +17,7 @@ body {
     grid-template-rows: 1fr auto;
 }
 .header-container {
+    z-index: 10;
     position: fixed;
     top: 0;
     width: 100%;
@@ -47,10 +48,13 @@ body {
 }
 .header__ul__li__a {
     text-decoration: none;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     color: #FFF;
-    font-weight: 600;
+    font-weight: 200;
     position: relative;
+}
+.header__ul__li__a-selected {
+    font-weight: 400;
 }
 .header__ul__li-logo {
     margin-right: auto;
@@ -64,10 +68,11 @@ body {
     transition: all .15s ease-in-out;
 }
 .header__ul__li__a__logo:hover {
-    background: #eee3;
+
 }
 .header-scrolled {
     background: #333;
+    z-index: 10;
 
     /*box-shadow: 0 5px 8px 0 #222;*/
 
@@ -98,11 +103,15 @@ body {
 .underline-animation:hover:before {
     width: 100%;
 }
+.section__article {
+    text-align: justify;
+    line-height: 1.5;
+    text-indent: 30px;
+}
 .main {
     width: 100%;
     max-width: 968px;
     color: #FFF;
-    padding: 0 15px;
     margin: 100px auto;
 }
 .label-container {
@@ -178,6 +187,76 @@ body {
 
 .showNav {
     transform: translateX(0) !important;
+}
+
+.projects-wrapper {
+    justify-content: center;
+    margin-top: 200px;
+    display: grid;
+    grid-gap: 75px;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+}
+
+.projects {
+    /*width: 260px;*/
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    background: #232323;
+    border-radius: 20px;
+    box-shadow: #3339 0 6px 15px;
+}
+.projects__head {
+    border-bottom: #fff 3px solid;
+    position: relative;
+}
+.projects__head-img {
+    width: 100%;
+    height: 140px;
+    display: flex;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+}
+.projects__head-icon {
+    width: 86px;
+    height: 86px;
+    border-radius: 100px;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: #ffffff 5px solid;
+}
+.projects__body {
+    padding: 15px;
+}
+.projects__body-h2 {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+.projects__body-article {
+    font-size: 14px;
+    text-align: justify;
+    line-height: 1.5;
+    text-indent: 10px;
+}
+.projects__bottom {
+    margin-top: auto;
+}
+.projects__bottom-a {
+    display: block;
+    width: 100%;
+    background: #678ADE;
+    border-radius: 0 0 15px 15px;
+    padding: 7px 0;
+    text-decoration: none;
+    color: #FFFFFF;
+    text-align: center;
+}
+.projects__bottom-a:hover {
+    background: #4E71C4;
 }
 
 @media (max-width: 768px) {
