@@ -112,6 +112,8 @@ body {
 .main {
     width: 100%;
     max-width: 968px;
+    padding: 0 10px;
+    box-sizing: border-box;
     color: #FFF;
     margin: 100px auto;
 }
@@ -259,7 +261,7 @@ body {
     display: block;
     width: 100%;
     background: #678ADE;
-    border-radius: 10px;
+    border-radius: 7px;
     padding: 7px 0;
     text-decoration: none;
     color: #FFFFFF;
@@ -288,6 +290,79 @@ body {
     border: #FF3333 2px solid;
     text-align: center;
     border-radius: 10px;
+}
+
+.developers-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 75px;
+}
+.developers {
+    border-radius: 15px;
+    background: #FFFFFF;
+    color: #111111;
+    display: flex;
+    flex-direction: column;
+}
+.developers__head {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    background: #EEEEEE;
+    border-radius: 15px 15px 0 0;
+}
+.developers__head-name {
+    display: flex;
+    flex-direction: column;
+}
+.developers__head-img {
+    width: 96px;
+    height: 96px;
+    border-radius: 128px;
+    margin-right: 10px;
+    border: #333333 5px solid;
+}
+.developers__head-hint {
+    font-size: 14px;
+    opacity: .5;
+}
+.developers__body-article {
+    text-align: justify;
+    line-height: 1.5;
+    text-indent: 20px;
+    padding: 15px;
+}
+.developers__bottom {
+    margin-top: auto;
+    display: flex;
+    padding: 5px;
+    gap: 5px;
+}
+.developers__bottom-a {
+    width: 100%;
+    display: block;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px 0;
+    text-decoration: none;
+}
+.developers__bottom-a:hover {
+    transform: translateY(1px);
+    box-shadow: #3339 0 2px 2px;
+}
+.a-github {
+    background: #111111;
+    color: #FFFFFF;
+}
+.a-telegram {
+    background: #2298D4;
+    color: #FFFFFF;
+}
+.a-discord {
+    background: #3463F1;
+    color: #FFFFFF;
 }
 
 @media (max-width: 768px) {
@@ -339,5 +414,9 @@ body {
     }
     .header-mobile__ul__li-logo {
         display: flex;
+    }
+    .label__h1 {
+        font-size: 80pt;
+        text-align: center;
     }
 }
