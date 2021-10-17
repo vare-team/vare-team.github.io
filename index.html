@@ -17,85 +17,131 @@
 	<script src="./js/script.js"></script>
 	<title>VARE</title>
 </head>
-	<body class="body-wrapper">
-
-	<header class="header-container" id="header">
-		<div class="header-mobile">
-			<div class="header-mobile__ul__li-logo">
-				<a href="./" class="header__ul__li__logo" aria-label="На главную">
-					<img src="./assets/vare-16.svg" alt="Логотип" class="header__ul__li__a__logo">
-				</a>
-			</div>
-			<button class="header__burger-button" id="mobile-menu" aria-label="Меню">
-				<svg style="display: flex; margin: auto" viewBox="0 0 100 100">
-					<rect fill="currentColor" width="100" height="20"></rect>
-					<rect fill="currentColor" y="40" width="100" height="20"></rect>
-					<rect fill="currentColor" y="80" width="100" height="20"></rect>
-				</svg>
-			</button>
+<body>
+	<header class="header">
+		<div class="header__container">
+			<img class="header__logo" src="/assets/vare-16.svg" alt="">
+			<nav class="header__nav">
+				<a href="">О Нас</a>
+				<a href="">Команда</a>
+				<a href="">Статистика</a>
+			</nav>
 		</div>
-
-		<nav class="header" id="header-nav">
-			<ul class="header__ul">
-				<li class="header__ul__li-logo">
-					<a href="./" class="header__ul__li__logo" aria-label="На главную">
-						<img src="./assets/vare-16.svg" alt="Логотип" class="header__ul__li__a__logo">
-					</a>
-				</li>
-				<li class="header__ul__li"><a href="./projects.html" class="header__ul__li__a underline-animation">Проекты</a></li>
-				<li class="header__ul__li"><a href="./developers.html" class="header__ul__li__a underline-animation">Разработчики</a></li>
-			</ul>
-		</nav>
 	</header>
-
-
-		<main class="main">
-
-			<section class="label-container">
-				<h1 class="label__h1">VARE</h1>
-				<article id="banner" class="label__article">Мониторинги, боты, приложения и многое другое!</article>
-			</section>
-
-			<br>
-			<section class="section">
-				<article class="section__article">
-					Всё началось давным давно. На прямой трансляции встретились два юных разраба, хотевшие что-то сделать. И они сделали.
-					<br>
-					Чем они только не занимались: Дискорд боты, программы на Python, П.О. для упрощения работы с электроными дневниками, но шло время и на горизонте появился перспективный проект - SD.C.
-					На данный момент он полностью пренадлежит Vare и активно обновляется.
+	<section class="section-showup">
+		<div class="showup__container">
+			<img class="showup__container__logo" src="/assets/vareLogo.svg" alt="">
+			<div class="showup__container__card">
+				<h1 class="showup__container__card__h1">SD.C</h1>
+				<article class="showup__container__card__article">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus animi atque debitis explicabo quam sequi totam velit voluptatum! Distinctio exercitationem fugit quae quia quod sunt. Culpa numquam quis reprehenderit.</p>
 				</article>
-			</section>
-
-
-		</main>
-
-		<footer class="footer">
-			<div class="footer-container">
-				<div class="footer__block">
-					<h2 class="footer__block__h">О нас</h2>
-					<article>
-						VaRe это команда, которая разрабатывает OpenSource проекты, Discord ботов и многое другое.
-					</article>
-				</div>
-				<div class="footer__block">
-					<h3 class="footer__block__h">Ссылки</h3>
-					<article class="footer__block__article">
-						<ul class="footer__block__article__ul">
-							<li class="footer__block__article__ul__li"><a href="https://discord.com/invite/8KKVhTU" target="_blank" class="footer__block__article__ul__li__a">Discord Сервер</a></li>
-							<li class="footer__block__article__ul__li"><a href="https://github.com/vare-team" target="_blank" class="footer__block__article__ul__li__a">GitHUB</a></li>
-						</ul>
-					</article>				</div>
-				<div class="footer__block">
-					<h3 class="footer__block__h">Контакты</h3>
-					<article class="footer__block__article">
-						<ul class="footer__block__article__ul">
-							<li class="footer__block__article__ul__li"><a href="mailto:support@sdc.su" class="footer__block__article__ul__li__a">support@sdc.su</a></li>
-							<li class="footer__block__article__ul__li"><a href="mailto:support@vare.pw" class="footer__block__article__ul__li__a">support@vare.pw</a></li>
-						</ul>
-					</article>
+				<div class="showup__container__actions">
+					<a href="" class="showup__link">Перейти</a>
 				</div>
 			</div>
-		</footer>
-
-	</body>
+		</div>
+		<div class="shape-divider-bot fill--white">
+			<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+				<path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+			</svg>
+		</div>
+		<img class="showup__img" src="/assets/sdc-head.png" alt="">
+	</section>
+	<section class="section">
+		<div class="section-unit" style="margin-top: -120px;">
+			<h2 class="section__h">#О_Нас</h2>
+			<div class="section__combinator">
+				<article class="section__article">
+					<h3>Заголовок</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam, aliquid, at commodi cupiditate deleniti dicta dolor esse et expedita laboriosam odio odit quis quo recusandae sint tenetur vel voluptatem.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam, aliquid, at commodi cupiditate deleniti dicta dolor esse et expedita laboriosam odio odit quis quo recusandae sint tenetur vel voluptatem.</p>
+					<h3>И ещё один</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam, aliquid, at commodi cupiditate deleniti dicta dolor esse et expedita laboriosam odio odit quis quo recusandae sint tenetur vel voluptatem.</p>
+				</article>
+				<img class="section__img" src="/assets/vare-16.svg" alt="">
+			</div>
+		</div>
+	</section>
+	<section class="section section--stuff">
+		<div class="shape-divider-top fill--white">
+			<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+				<path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+				<path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+				<path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+			</svg>
+		</div>
+		<div class="section-unit">
+			<h2 class="section__h">#Команда</h2>
+			<div class="section__combinator">
+				<article class="section__article">
+					<h3>Заголовок</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam, aliquid, at commodi cupiditate deleniti dicta dolor esse et expedita laboriosam odio odit quis quo recusandae sint tenetur vel voluptatem.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam, aliquid, at commodi cupiditate deleniti dicta dolor esse et expedita laboriosam odio odit quis quo recusandae sint tenetur vel voluptatem.</p>
+					<h3>И ещё один</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam, aliquid, at commodi cupiditate deleniti dicta dolor esse et expedita laboriosam odio odit quis quo recusandae sint tenetur vel voluptatem.</p>
+				</article>
+				<img class="section__img" src="/assets/vare-16.svg" alt="">
+			</div>
+		</div>
+	</section>
+	<section class="section section--stat">
+		<div class="shape-divider-top fill--blue">
+			<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+				<path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+			</svg>
+		</div>
+		<div class="section-unit">
+			<h2 class="section__h">#Статистика</h2>
+			<div class="section__combinator">
+				<article class="section__article">
+					<h3>Заголовок</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam, aliquid, at commodi cupiditate deleniti dicta dolor esse et expedita laboriosam odio odit quis quo recusandae sint tenetur vel voluptatem.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam, aliquid, at commodi cupiditate deleniti dicta dolor esse et expedita laboriosam odio odit quis quo recusandae sint tenetur vel voluptatem.</p>
+					<h3>И ещё один</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam, aliquid, at commodi cupiditate deleniti dicta dolor esse et expedita laboriosam odio odit quis quo recusandae sint tenetur vel voluptatem.</p>
+				</article>
+				<img class="section__img" src="/assets/vare-16.svg" alt="">
+			</div>
+		</div>
+	</section>
+	<section class="section section--discord">
+		<div class="shape-divider-top fill--white">
+			<svg style="transform: scale(-1, 1)" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+				<path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+			</svg>
+		</div>
+		<div class="section-unit divider">
+			<h2 class="section__h">#Дискорд</h2>
+			<div class="section__combinator">
+				<article class="section__article">
+					<h3>Заголовок</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam, aliquid, at commodi cupiditate deleniti dicta dolor esse et expedita laboriosam odio odit quis quo recusandae sint tenetur vel voluptatem.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam, aliquid, at commodi cupiditate deleniti dicta dolor esse et expedita laboriosam odio odit quis quo recusandae sint tenetur vel voluptatem.</p>
+					<h3>И ещё один</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam, aliquid, at commodi cupiditate deleniti dicta dolor esse et expedita laboriosam odio odit quis quo recusandae sint tenetur vel voluptatem.</p>
+				</article>
+				<img class="section__img" src="/assets/vare-16.svg" alt="">
+			</div>
+			<div class="shape-divider-bot fill--black">
+				<svg style="height: 200px" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+					<path d="M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z" class="shape-fill"></path>
+				</svg>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="footer__container">
+			<section class="footer__section">
+				footer
+			</section>
+			<section class="footer__section">
+				footer
+			</section>
+			<section class="footer__section">
+				footer
+			</section>
+		</div>
+	</footer>
+</body>
 </html>
