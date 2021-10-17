@@ -8,7 +8,7 @@ body {
     padding: 0;
     width: 100%;
     height: 100%;
-    background: #232333;
+    background: #131313;
     box-sizing: border-box;
 }
 .header {
@@ -26,6 +26,15 @@ body {
     padding: 0 20px;
     display: flex;
     justify-content: space-between;
+}
+.swiper, .swiper-wrapper {
+    height: 100vh;
+    width: 100vw;
+}
+.swiper-btn {
+    background: none;
+    border: none;
+    color: #fff !important;
 }
 .header__logo {
     height: 100%;
@@ -100,28 +109,50 @@ body {
     object-fit: cover;
     filter: blur(5px);
     z-index: -1;
+    animation: showup__blur 1.5s ease-in-out;
 }
 .showup__container {
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     max-width: 1280px;
+    margin: auto;
 }
 .showup__container__logo {
     width: 100%;
     height: 100%;
     max-width: 600px;
-    animation: showup__left-right 1.5s ease-in-out;
+    animation: showup__top-bot 1.5s ease-in-out;
 }
 .showup__container__card {
     color: white;
     margin: auto 0 auto 8rem;
-    animation: showup__bot-top 1.5s ease-in-out;
+}
+.showup__container__card__h1 {
+    animation: showup__top-bot 1s ease-in-out .5s backwards;
+}
+.showup__container__card__article {
+    animation: showup__top-bot 1s ease-in-out .7s backwards;
+}
+.showup__container__actions {
+    animation: showup__top-bot 1s ease-in-out 1s backwards;
+}
+@keyframes showup__blur {
+    0% {
+        filter: blur(30px);
+        transform: translateY(50px);
+        opacity:0;
+    }
+    100% {
+        filter: blur(5px);
+        transform: translateY(0%);
+        opacity:1;
+    }
 }
 @keyframes showup__bot-top {
     0% {
-        transform: translateY(50%);
+        transform: translateY(50px);
         opacity:0;
     }
     100% {
@@ -131,7 +162,7 @@ body {
 }
 @keyframes showup__top-bot {
     0% {
-        transform: translateY(-50%);
+        transform: translateY(-50px);
         opacity:0;
     }
     100% {
@@ -141,7 +172,17 @@ body {
 }
 @keyframes showup__left-right {
     0% {
-        transform: translateX(-50%);
+        transform: translateX(-50px);
+        opacity:0;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity:1;
+    }
+}
+@keyframes showup__right-left {
+    0% {
+        transform: translateX(50px);
         opacity:0;
     }
     100% {
@@ -243,4 +284,18 @@ body {
 }
 .divider {
     padding-bottom: 20rem;
+}
+
+.element-animation {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.element-animation.element-show {
+    opacity: 1;
+    transition: all 1.5s;
+    transform: translateY(0%);
+}
+.swiper-wrapper, .swiper-slide, .swiper {
+    z-index: -1 !important;
 }

@@ -14,7 +14,10 @@
 	<meta name="viewport"
 	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<script src="./js/script.js"></script>
+	<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper/swiper-bundle.min.css"
+	/>
 	<title>VARE</title>
 </head>
 <body>
@@ -29,15 +32,39 @@
 		</div>
 	</header>
 	<section class="section-showup">
-		<div class="showup__container">
-			<img class="showup__container__logo" src="/assets/vareLogo.svg" alt="">
-			<div class="showup__container__card">
-				<h1 class="showup__container__card__h1">SD.C</h1>
-				<article class="showup__container__card__article">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus animi atque debitis explicabo quam sequi totam velit voluptatum! Distinctio exercitationem fugit quae quia quod sunt. Culpa numquam quis reprehenderit.</p>
-				</article>
-				<div class="showup__container__actions">
-					<a href="" class="showup__link">Перейти</a>
+		<button class="swiper-button-prev swiper-btn"></button>
+		<button class="swiper-button-next swiper-btn"></button>
+		<div class="swiper">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div class="showup__container">
+						<img class="showup__container__logo" src="/assets/vareLogo.svg" alt="">
+						<div class="showup__container__card">
+							<h1 class="showup__container__card__h1">SD.C</h1>
+							<article class="showup__container__card__article">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus animi atque debitis explicabo quam sequi totam velit voluptatum! Distinctio exercitationem fugit quae quia quod sunt. Culpa numquam quis reprehenderit.</p>
+							</article>
+							<div class="showup__container__actions">
+								<a href="" class="showup__link">Перейти</a>
+							</div>
+						</div>
+					</div>
+					<img class="showup__img" src="/assets/sdc-head.png" alt="">
+				</div>
+				<div class="swiper-slide">
+					<div class="showup__container">
+						<img class="showup__container__logo" src="/assets/vareLogo.svg" alt="">
+						<div class="showup__container__card">
+							<h1 class="showup__container__card__h1">VARE</h1>
+							<article class="showup__container__card__article">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus animi atque debitis explicabo quam sequi totam velit voluptatum! Distinctio exercitationem fugit quae quia quod sunt. Culpa numquam quis reprehenderit.</p>
+							</article>
+							<div class="showup__container__actions">
+								<a href="" class="showup__link">Перейти</a>
+							</div>
+						</div>
+					</div>
+					<img class="showup__img" src="/assets/banner.png" alt="">
 				</div>
 			</div>
 		</div>
@@ -46,20 +73,19 @@
 				<path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
 			</svg>
 		</div>
-		<img class="showup__img" src="/assets/sdc-head.png" alt="">
 	</section>
 	<section class="section">
 		<div class="section-unit" style="margin-top: -120px;">
-			<h2 class="section__h">#О_Нас</h2>
+			<h2 class="section__h element-animation">#О_Нас</h2>
 			<div class="section__combinator">
-				<article class="section__article">
+				<article class="section__article element-animation">
 					<h3>Заголовок</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam, aliquid, at commodi cupiditate deleniti dicta dolor esse et expedita laboriosam odio odit quis quo recusandae sint tenetur vel voluptatem.</p>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam, aliquid, at commodi cupiditate deleniti dicta dolor esse et expedita laboriosam odio odit quis quo recusandae sint tenetur vel voluptatem.</p>
 					<h3>И ещё один</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam, aliquid, at commodi cupiditate deleniti dicta dolor esse et expedita laboriosam odio odit quis quo recusandae sint tenetur vel voluptatem.</p>
 				</article>
-				<img class="section__img" src="/assets/vare-16.svg" alt="">
+				<img class="section__img element-animation" src="/assets/vare-16.svg" alt="">
 			</div>
 		</div>
 	</section>
@@ -72,16 +98,16 @@
 			</svg>
 		</div>
 		<div class="section-unit">
-			<h2 class="section__h">#Команда</h2>
+			<h2 class="section__h element-animation">#Команда</h2>
 			<div class="section__combinator">
-				<article class="section__article">
+				<article class="section__article element-animation">
 					<h3>Заголовок</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam, aliquid, at commodi cupiditate deleniti dicta dolor esse et expedita laboriosam odio odit quis quo recusandae sint tenetur vel voluptatem.</p>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam, aliquid, at commodi cupiditate deleniti dicta dolor esse et expedita laboriosam odio odit quis quo recusandae sint tenetur vel voluptatem.</p>
 					<h3>И ещё один</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam, aliquid, at commodi cupiditate deleniti dicta dolor esse et expedita laboriosam odio odit quis quo recusandae sint tenetur vel voluptatem.</p>
 				</article>
-				<img class="section__img" src="/assets/vare-16.svg" alt="">
+				<img class="section__img element-animation" src="/assets/vare-16.svg" alt="">
 			</div>
 		</div>
 	</section>
@@ -92,9 +118,9 @@
 			</svg>
 		</div>
 		<div class="section-unit">
-			<h2 class="section__h">#Статистика</h2>
+			<h2 class="section__h element-animation">#Статистика</h2>
 			<div class="section__combinator">
-				<article class="section__article">
+				<article class="section__article element-animation">
 					<h3>Заголовок</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam, aliquid, at commodi cupiditate deleniti dicta dolor esse et expedita laboriosam odio odit quis quo recusandae sint tenetur vel voluptatem.</p>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam, aliquid, at commodi cupiditate deleniti dicta dolor esse et expedita laboriosam odio odit quis quo recusandae sint tenetur vel voluptatem.</p>
@@ -112,16 +138,16 @@
 			</svg>
 		</div>
 		<div class="section-unit divider">
-			<h2 class="section__h">#Дискорд</h2>
+			<h2 class="section__h element-animation">#Дискорд</h2>
 			<div class="section__combinator">
-				<article class="section__article">
+				<article class="section__article element-animation">
 					<h3>Заголовок</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam, aliquid, at commodi cupiditate deleniti dicta dolor esse et expedita laboriosam odio odit quis quo recusandae sint tenetur vel voluptatem.</p>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam, aliquid, at commodi cupiditate deleniti dicta dolor esse et expedita laboriosam odio odit quis quo recusandae sint tenetur vel voluptatem.</p>
 					<h3>И ещё один</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam, aliquid, at commodi cupiditate deleniti dicta dolor esse et expedita laboriosam odio odit quis quo recusandae sint tenetur vel voluptatem.</p>
 				</article>
-				<img class="section__img" src="/assets/vare-16.svg" alt="">
+				<img class="section__img element-animation" src="/assets/vare-16.svg" alt="">
 			</div>
 			<div class="shape-divider-bot fill--black">
 				<svg style="height: 200px" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -131,7 +157,7 @@
 		</div>
 	</section>
 	<footer class="footer">
-		<div class="footer__container">
+		<div class="footer__container element-animation">
 			<section class="footer__section">
 				footer
 			</section>
@@ -143,5 +169,7 @@
 			</section>
 		</div>
 	</footer>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>
