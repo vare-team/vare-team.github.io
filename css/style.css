@@ -128,7 +128,7 @@ body {
     top: 0;
     left: 0;
     object-fit: cover;
-    filter: blur(5px);
+    filter: blur(5px) brightness(.6);
     z-index: -1;
     animation: showup__blur 1.5s ease-in-out;
 }
@@ -144,9 +144,12 @@ body {
 }
 .showup__container__logo {
     width: 100%;
-    height: 100%;
+    height: fit-content;
     max-width: 300px;
     animation: showup__top-bot 1.5s ease-in-out;
+    object-fit: contain;
+    align-self: center;
+    border-radius: 3rem;
 }
 .showup__container__card {
     color: white;
@@ -164,12 +167,12 @@ body {
 }
 @keyframes showup__blur {
     0% {
-        filter: blur(30px);
+        filter: blur(30px) brightness(.2);
         transform: translateY(50px);
         opacity:0;
     }
     100% {
-        filter: blur(5px);
+        filter: blur(5px) brightness(.6);
         transform: translateY(0%);
         opacity:1;
     }
@@ -215,16 +218,20 @@ body {
     }
 }
 .showup__container__card__h1 {
-    font-size: 4rem;
+    font-size: 2.5rem;
+    line-height: 2.7rem;
     margin: 0;
-    line-height: 3rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 .showup__container__card__article {
     font-size: 1.5rem;
 }
 .showup__container__card__article > p {
     margin: 0;
+}
+.showup__container__card__article-hint {
+    font-size: .8rem;
+    opacity: .8 ;
 }
 .showup__container__actions {
     margin-top: 2rem;
