@@ -1,236 +1,291 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<meta charset="UTF-8">
-	<link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
-	<meta name="msapplication-TileColor" content="#da532c">
-	<meta name="theme-color" content="#ffffff">
+    <meta charset="UTF-8">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
-	<meta name="description" content="Мониторинги, боты, приложения и многое другое!">
+    <meta name="description" content="Мониторинги, боты, приложения и многое другое!">
 
-	<link rel="stylesheet" href="./css/style.css">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 
-	<title>VARE</title>
+    <title>VARE</title>
 </head>
 <body>
-	<header class="header">
-		<div class="header__container">
-			<img class="header__logo" src="/assets/vare-16.svg" alt="">
-			<nav class="header__nav">
-				<button onclick="scrollToElement('LINK_about')">О Нас</button>
-				<button onclick="scrollToElement('LINK_team')">Команда</button>
-				<button onclick="scrollToElement('LINK_stat')">Статистика</button>
-			</nav>
-		</div>
-	</header>
-	<section class="section-showup">
-		<button class="swiper-button-prev swiper-btn"></button>
-		<button class="swiper-button-next swiper-btn"></button>
-		<div class="swiper">
-			<div class="swiper-wrapper">
-				<div class="swiper-slide">
-					<div class="showup__container">
-						<img class="showup__container__logo" src="/assets/images/showUp-logos__sdc.svg" alt="Логотип">
-						<div class="showup__container__card">
-							<h1 class="showup__container__card__h1">Мониторинг Discord гильдий</h1>
-							<article class="showup__container__card__article">
-								<p>Проект SD.C представляет из себя веб-сайт, размещающий у себя публичные сервера пользователей программы Discord.</p>
-								<span class="showup__container__card__article-hint">Более 20 000 серверов</span>
-							</article>
-							<div class="showup__container__actions">
-								<a href="https://server-discord.com/" target="_blank" class="showup__link">Перейти</a>
-							</div>
-						</div>
-					</div>
-					<img class="showup__img" src="/assets/images/showUp-bg__sdc.png" alt="">
-				</div>
-				<div class="swiper-slide">
-					<div class="showup__container">
-						<img class="showup__container__logo" src="/assets/images/showUp-logos__bt.png" alt="">
-						<div class="showup__container__card">
-							<h1 class="showup__container__card__h1">Мониторинг Discord ботов</h1>
-							<article class="showup__container__card__article">
-								<p>Публичный сайт мониторинга Discord ботов с системой продвижения и возможностью добавить своего бота.</p>
-								<span class="showup__container__card__article-hint">Более 200 ботов</span>
-							</article>
-							<div class="showup__container__actions">
-								<a href="https://bots.server-discord.com/" target="_blank" class="showup__link">Перейти</a>
-							</div>
-						</div>
-					</div>
-					<img class="showup__img" src="/assets/images/showUp-bg__bsdc.png" alt="">
-				</div>
-				<div class="swiper-slide">
-					<div class="showup__container">
-						<img class="showup__container__logo" src="/assets/images/showUp-logos__wh.png" alt="">
-						<div class="showup__container__card">
-							<h1 class="showup__container__card__h1">Whooves - Discord бот</h1>
-							<article class="showup__container__card__article">
-								<p>Бот, предоставляющий множество уникальных и интересных функций, таких как автоматическое исправления никнейма участника, если в нём есть запрещённые символы, система варнов и т.д.</p>
-								<span class="showup__container__card__article-hint">Более 500 серверов</span>
-							</article>
-							<div class="showup__container__actions">
-								<a href="https://discord.com/oauth2/authorize?client_id=531094088695414804&scope=bot+applications.commands&permissions=435547222" target="_blank" class="showup__link">Пригласить</a>
-								<a href="https://github.com/vare-team/whooves" target="_blank" class="showup__link-additional">Github</a>
-							</div>
-						</div>
-					</div>
-					<img class="showup__img" src="/assets/images/showUp-bg__bots.png" alt="">
-				</div>
-				<div class="swiper-slide">
-					<div class="showup__container">
-						<img class="showup__container__logo" src="/assets/images/showUp-logos__nk.png" alt="">
-						<div class="showup__container__card">
-							<h1 class="showup__container__card__h1">Nika - Discord бот</h1>
-							<article class="showup__container__card__article">
-								<p>Бот, с единой базой нарушителей, защищающий сервер от пользователей, спамящих приглашениями на другие сервера.</p>
-								<span class="showup__container__card__article-hint">Более 17 000 серверов</span>
-							</article>
-							<div class="showup__container__actions">
-								<a href="https://discord.com/oauth2/authorize?client_id=543858333585506315&scope=bot+applications.commands&permissions=8" target="_blank" class="showup__link">Пригласить</a>
-							</div>
-						</div>
-					</div>
-					<img class="showup__img" src="/assets/images/showUp-bg__bots.png" alt="">
-				</div>
-				<div class="swiper-slide">
-					<div class="showup__container">
-						<img class="showup__container__logo" src="/assets/images/showUp-logos__pt.png" alt="">
-						<div class="showup__container__card">
-							<h1 class="showup__container__card__h1">PonyTown Worlds</h1>
-							<article class="showup__container__card__article">
-								<p>Простой и удобный список всех доступных кастомных серверов Pony Town в виде простого мобильного приложения.</p>
-								<span class="showup__container__card__article-hint">Более 10 000 установок</span>
-							</article>
-							<div class="showup__container__actions">
-								<a href="https://play.google.com/store/apps/details?id=ru.vare.ponytownworlds" target="_blank" class="showup__link">Перейти</a>
-							</div>
-						</div>
-					</div>
-					<img class="showup__img" src="/assets/images/showUp-bg__pt.png" alt="">
-				</div>
-			</div>
-		</div>
-		<div class="shape-divider-bot fill--white" id="LINK_about">
-			<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-				<path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-			</svg>
-		</div>
-	</section>
-	<section class="section">
-		<div class="section-unit" style="margin-top: -120px;">
-			<h2 class="section__h element-animation">О Нас</h2>
-			<div class="section__combinator">
-				<article class="section__article element-animation">
-					<h3>Заголовок</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam, aliquid, at commodi cupiditate deleniti dicta dolor esse et expedita laboriosam odio odit quis quo recusandae sint tenetur vel voluptatem.</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam, aliquid, at commodi cupiditate deleniti dicta dolor esse et expedita laboriosam odio odit quis quo recusandae sint tenetur vel voluptatem.</p>
-					<h3>И ещё один</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam, aliquid, at commodi cupiditate deleniti dicta dolor esse et expedita laboriosam odio odit quis quo recusandae sint tenetur vel voluptatem.</p>
-				</article>
-				<img class="section__img element-animation" src="/assets/vare-16.svg" alt="">
-			</div>
-		</div>
-	</section>
-	<section class="section section--stuff" id="LINK_team">
-		<div class="shape-divider-top fill--white">
-			<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-				<path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
-				<path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
-				<path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
-			</svg>
-		</div>
-		<div class="section-unit">
-			<h2 class="section__h element-animation">Команда</h2>
-			<div class="section__combinator">
-				<article class="section__article element-animation">
-					<h3>Заголовок</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam, aliquid, at commodi cupiditate deleniti dicta dolor esse et expedita laboriosam odio odit quis quo recusandae sint tenetur vel voluptatem.</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam, aliquid, at commodi cupiditate deleniti dicta dolor esse et expedita laboriosam odio odit quis quo recusandae sint tenetur vel voluptatem.</p>
-					<h3>И ещё один</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam, aliquid, at commodi cupiditate deleniti dicta dolor esse et expedita laboriosam odio odit quis quo recusandae sint tenetur vel voluptatem.</p>
-				</article>
-				<img class="section__img element-animation" src="/assets/vare-16.svg" alt="">
-			</div>
-		</div>
-	</section>
-	<section class="section section--stat" id="LINK_stat">
-		<div class="shape-divider-top fill--blue">
-			<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-				<path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
-			</svg>
-		</div>
-		<div class="section-unit">
-			<h2 class="section__h element-animation">Статистика</h2>
-			<div class="section__combinator">
-				<article class="section__article element-animation">
-					<h3>Заголовок</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam, aliquid, at commodi cupiditate deleniti dicta dolor esse et expedita laboriosam odio odit quis quo recusandae sint tenetur vel voluptatem.</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam, aliquid, at commodi cupiditate deleniti dicta dolor esse et expedita laboriosam odio odit quis quo recusandae sint tenetur vel voluptatem.</p>
-					<h3>И ещё один</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam, aliquid, at commodi cupiditate deleniti dicta dolor esse et expedita laboriosam odio odit quis quo recusandae sint tenetur vel voluptatem.</p>
-				</article>
-				<img class="section__img" src="/assets/vare-16.svg" alt="">
-			</div>
-		</div>
-	</section>
-	<section class="section section--discord">
-		<div class="shape-divider-top fill--white">
-			<svg style="transform: scale(-1, 1)" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-				<path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
-			</svg>
-		</div>
-		<div class="section-unit divider">
-			<h2 class="section__h element-animation">Дискорд</h2>
-			<div class="section__combinator">
-				<article class="section__article element-animation">
-					<h3>Заголовок</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam, aliquid, at commodi cupiditate deleniti dicta dolor esse et expedita laboriosam odio odit quis quo recusandae sint tenetur vel voluptatem.</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam, aliquid, at commodi cupiditate deleniti dicta dolor esse et expedita laboriosam odio odit quis quo recusandae sint tenetur vel voluptatem.</p>
-					<h3>И ещё один</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam, aliquid, at commodi cupiditate deleniti dicta dolor esse et expedita laboriosam odio odit quis quo recusandae sint tenetur vel voluptatem.</p>
-				</article>
-				<img class="section__img element-animation" src="/assets/vare-16.svg" alt="">
-			</div>
-			<div class="shape-divider-bot fill--black">
-				<svg style="height: 200px" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-					<path d="M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z" class="shape-fill"></path>
-				</svg>
-			</div>
-		</div>
-	</section>
-	<footer class="footer-container">
-		<div class="footer__block">
-			<h3 class="footer__block__h">Vare</h3>
-			<article>
-				VaRe это команда, которая разрабатывает OpenSource проекты, Discord ботов и многое другое.
-			</article>
-		</div>
-		<div class="footer__block">
-			<h4 class="footer__block__h">Ссылки</h4>
-			<article class="footer__block__article">
-				<ul class="footer__block__article__ul">
-					<li class="footer__block__article__ul__li"><a href="https://discord.com/invite/8KKVhTU" target="_blank" class="footer__block__article__ul__li__a">Discord Сервер</a></li>
-					<li class="footer__block__article__ul__li"><a href="https://github.com/vare-team" target="_blank" class="footer__block__article__ul__li__a">Github</a></li>
-				</ul>
-			</article> </div>
-		<div class="footer__block">
-			<h4 class="footer__block__h">Контакты</h4>
-			<article class="footer__block__article">
-				<ul class="footer__block__article__ul">
-					<li class="footer__block__article__ul__li"><a href="mailto:support@sdc.su" class="footer__block__article__ul__li__a">support@sdc.su</a></li>
-					<li class="footer__block__article__ul__li"><a href="mailto:support@vare.pw" class="footer__block__article__ul__li__a">support@vare.pw</a></li>
-				</ul>
-			</article>
-		</div>
-	</footer>
-	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-	<script src="js/script.js"></script>
+<header class="header">
+    <div class="header__container">
+        <img class="header__logo" src="/assets/vare-16.svg" alt="">
+        <nav class="header__nav">
+            <button onclick="scrollToElement('LINK_about')">О Нас</button>
+            <button onclick="scrollToElement('LINK_team')">Команда</button>
+            <button onclick="scrollToElement('LINK_stat')">Статистика</button>
+        </nav>
+    </div>
+</header>
+<section class="section-showup">
+    <button class="swiper-button-prev swiper-btn"></button>
+    <button class="swiper-button-next swiper-btn"></button>
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="showup__container">
+                    <img class="showup__container__logo" src="/assets/images/showUp-logos__sdc.svg" alt="Логотип">
+                    <div class="showup__container__card">
+                        <h1 class="showup__container__card__h1">Мониторинг Discord гильдий</h1>
+                        <article class="showup__container__card__article">
+                            <p>Проект SD.C представляет из себя веб-сайт, размещающий у себя публичные сервера
+                                пользователей программы Discord.</p>
+                            <span class="showup__container__card__article-hint">Более 20 000 серверов</span>
+                        </article>
+                        <div class="showup__container__actions">
+                            <a href="https://server-discord.com/" target="_blank" class="showup__link">Перейти</a>
+                        </div>
+                    </div>
+                </div>
+                <img class="showup__img" src="/assets/images/showUp-bg__sdc.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <div class="showup__container">
+                    <img class="showup__container__logo" src="/assets/images/showUp-logos__bt.png" alt="">
+                    <div class="showup__container__card">
+                        <h1 class="showup__container__card__h1">Мониторинг Discord ботов</h1>
+                        <article class="showup__container__card__article">
+                            <p>Публичный сайт мониторинга Discord ботов с системой продвижения и возможностью добавить
+                                своего бота.</p>
+                            <span class="showup__container__card__article-hint">Более 200 ботов</span>
+                        </article>
+                        <div class="showup__container__actions">
+                            <a href="https://bots.server-discord.com/" target="_blank" class="showup__link">Перейти</a>
+                        </div>
+                    </div>
+                </div>
+                <img class="showup__img" src="/assets/images/showUp-bg__bsdc.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <div class="showup__container">
+                    <img class="showup__container__logo" src="/assets/images/showUp-logos__wh.png" alt="">
+                    <div class="showup__container__card">
+                        <h1 class="showup__container__card__h1">Whooves - Discord бот</h1>
+                        <article class="showup__container__card__article">
+                            <p>Бот, предоставляющий множество уникальных и интересных функций, таких как автоматическое
+                                исправления никнейма участника, если в нём есть запрещённые символы, система варнов и
+                                т.д.</p>
+                            <span class="showup__container__card__article-hint">Более 500 серверов</span>
+                        </article>
+                        <div class="showup__container__actions">
+                            <a href="https://discord.com/oauth2/authorize?client_id=531094088695414804&scope=bot+applications.commands&permissions=435547222"
+                               target="_blank" class="showup__link">Пригласить</a>
+                            <a href="https://github.com/vare-team/whooves" target="_blank"
+                               class="showup__link-additional">Github</a>
+                        </div>
+                    </div>
+                </div>
+                <img class="showup__img" src="/assets/images/showUp-bg__bots.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <div class="showup__container">
+                    <img class="showup__container__logo" src="/assets/images/showUp-logos__nk.png" alt="">
+                    <div class="showup__container__card">
+                        <h1 class="showup__container__card__h1">Nika - Discord бот</h1>
+                        <article class="showup__container__card__article">
+                            <p>Бот, с единой базой нарушителей, защищающий сервер от пользователей, спамящих
+                                приглашениями на другие сервера.</p>
+                            <span class="showup__container__card__article-hint">Более 17 000 серверов</span>
+                        </article>
+                        <div class="showup__container__actions">
+                            <a href="https://discord.com/oauth2/authorize?client_id=543858333585506315&scope=bot+applications.commands&permissions=8"
+                               target="_blank" class="showup__link">Пригласить</a>
+                        </div>
+                    </div>
+                </div>
+                <img class="showup__img" src="/assets/images/showUp-bg__bots.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <div class="showup__container">
+                    <img class="showup__container__logo" src="/assets/images/showUp-logos__pt.png" alt="">
+                    <div class="showup__container__card">
+                        <h1 class="showup__container__card__h1">PonyTown Worlds</h1>
+                        <article class="showup__container__card__article">
+                            <p>Простой и удобный список всех доступных кастомных серверов Pony Town в виде простого
+                                мобильного приложения.</p>
+                            <span class="showup__container__card__article-hint">Более 10 000 установок</span>
+                        </article>
+                        <div class="showup__container__actions">
+                            <a href="https://play.google.com/store/apps/details?id=ru.vare.ponytownworlds"
+                               target="_blank" class="showup__link">Перейти</a>
+                        </div>
+                    </div>
+                </div>
+                <img class="showup__img" src="/assets/images/showUp-bg__pt.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="shape-divider-bot fill--white" id="LINK_about">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                  class="shape-fill"></path>
+        </svg>
+    </div>
+</section>
+<section class="section">
+    <div class="section-unit" style="margin-top: -120px;">
+        <h2 class="section__h element-animation">О Нас</h2>
+        <div class="section__combinator">
+            <article class="section__article element-animation">
+                <h3>Заголовок</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam, aliquid, at commodi
+                    cupiditate deleniti dicta dolor esse et expedita laboriosam odio odit quis quo recusandae sint
+                    tenetur vel voluptatem.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam, aliquid, at commodi
+                    cupiditate deleniti dicta dolor esse et expedita laboriosam odio odit quis quo recusandae sint
+                    tenetur vel voluptatem.</p>
+                <h3>И ещё один</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam, aliquid, at commodi
+                    cupiditate deleniti dicta dolor esse et expedita laboriosam odio odit quis quo recusandae sint
+                    tenetur vel voluptatem.</p>
+            </article>
+            <img class="section__img element-animation" src="/assets/vare-16.svg" alt="">
+        </div>
+    </div>
+</section>
+<section class="section section--stuff" id="LINK_team">
+    <div class="shape-divider-top fill--white">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                  opacity=".25" class="shape-fill"></path>
+            <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+                  opacity=".5" class="shape-fill"></path>
+            <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                  class="shape-fill"></path>
+        </svg>
+    </div>
+    <div class="section-unit">
+        <h2 class="section__h element-animation">Команда</h2>
+        <div class="section__combinator">
+            <article class="section__article element-animation">
+                <h3>Заголовок</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam, aliquid, at commodi
+                    cupiditate deleniti dicta dolor esse et expedita laboriosam odio odit quis quo recusandae sint
+                    tenetur vel voluptatem.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam, aliquid, at commodi
+                    cupiditate deleniti dicta dolor esse et expedita laboriosam odio odit quis quo recusandae sint
+                    tenetur vel voluptatem.</p>
+                <h3>И ещё один</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam, aliquid, at commodi
+                    cupiditate deleniti dicta dolor esse et expedita laboriosam odio odit quis quo recusandae sint
+                    tenetur vel voluptatem.</p>
+            </article>
+            <img class="section__img element-animation" src="/assets/vare-16.svg" alt="">
+        </div>
+    </div>
+</section>
+<section class="section section--stat" id="LINK_stat">
+    <div class="shape-divider-top fill--blue">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+        </svg>
+    </div>
+    <div class="section-unit">
+        <h2 class="section__h element-animation">Статистика</h2>
+        <div class="section__combinator">
+            <article class="section__article element-animation">
+                <h3>Заголовок</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam, aliquid, at commodi
+                    cupiditate deleniti dicta dolor esse et expedita laboriosam odio odit quis quo recusandae sint
+                    tenetur vel voluptatem.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam, aliquid, at commodi
+                    cupiditate deleniti dicta dolor esse et expedita laboriosam odio odit quis quo recusandae sint
+                    tenetur vel voluptatem.</p>
+                <h3>И ещё один</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam, aliquid, at commodi
+                    cupiditate deleniti dicta dolor esse et expedita laboriosam odio odit quis quo recusandae sint
+                    tenetur vel voluptatem.</p>
+            </article>
+            <img class="section__img" src="/assets/vare-16.svg" alt="">
+        </div>
+    </div>
+</section>
+<section class="section section--discord">
+    <div class="shape-divider-top fill--white">
+        <svg style="transform: scale(-1, 1)" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+             viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+        </svg>
+    </div>
+    <div class="section-unit divider">
+        <h2 class="section__h element-animation">Дискорд</h2>
+        <div class="section__combinator">
+            <article class="section__article element-animation">
+                <p>Добро пожаловать на наш Discord Сервер!</p>
+                <div class="section__line">
+                    <iframe height="500" allowtransparency="true" frameborder="0"
+                            sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+                            class="section__line__frame"
+                            src="https://discord.com/widget?id=669961614434500620&amp;theme=dark"></iframe>
+                    <div class="section__line__container">
+                        <h3 class="section__line__h3">VARE Commnunity</h3>
+                        <ul class="section__line__ul">
+                            <li>Поддержка пользователей</li>
+                            <li>Уведомления о новостях проектов</li>
+                            <li>Баг репорт канал</li>
+                            <li>Специальный чат для бустеров</li>
+                            <li>Розыгрыши бустов</li>
+                            <li>Помощь касательно других проектов Vare</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="shape-divider-bot fill--black">
+            <svg style="height: 200px" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                 preserveAspectRatio="none">
+                <path d="M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </div>
+</section>
+<footer class="footer-container">
+    <div class="footer__block">
+        <h3 class="footer__block__h">Vare</h3>
+        <article>
+            VaRe это команда, которая разрабатывает OpenSource проекты, Discord ботов и многое другое.
+        </article>
+    </div>
+    <div class="footer__block">
+        <h4 class="footer__block__h">Ссылки</h4>
+        <article class="footer__block__article">
+            <ul class="footer__block__article__ul">
+                <li class="footer__block__article__ul__li"><a href="https://discord.com/invite/8KKVhTU" target="_blank"
+                                                              class="footer__block__article__ul__li__a">Discord
+                    Сервер</a></li>
+                <li class="footer__block__article__ul__li"><a href="https://github.com/vare-team" target="_blank"
+                                                              class="footer__block__article__ul__li__a">Github</a></li>
+            </ul>
+        </article>
+    </div>
+    <div class="footer__block">
+        <h4 class="footer__block__h">Контакты</h4>
+        <article class="footer__block__article">
+            <ul class="footer__block__article__ul">
+                <li class="footer__block__article__ul__li"><a href="mailto:support@sdc.su"
+                                                              class="footer__block__article__ul__li__a">support@sdc.su</a>
+                </li>
+                <li class="footer__block__article__ul__li"><a href="mailto:support@vare.pw"
+                                                              class="footer__block__article__ul__li__a">support@vare.pw</a>
+                </li>
+            </ul>
+        </article>
+    </div>
+</footer>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
