@@ -11,13 +11,11 @@
 	<meta name="description" content="Мониторинги, боты, приложения и многое другое!">
 
 	<link rel="stylesheet" href="./css/style.css">
-	<meta name="viewport"
-	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link
-			rel="stylesheet"
-			href="https://unpkg.com/swiper/swiper-bundle.min.css"
-	/>
+
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
 	<title>VARE</title>
 </head>
 <body>
@@ -25,9 +23,9 @@
 		<div class="header__container">
 			<img class="header__logo" src="/assets/vare-16.svg" alt="">
 			<nav class="header__nav">
-				<a href="">О Нас</a>
-				<a href="">Команда</a>
-				<a href="">Статистика</a>
+				<button onclick="scrollToElement('LINK_about')">О Нас</button>
+				<button onclick="scrollToElement('LINK_team')">Команда</button>
+				<button onclick="scrollToElement('LINK_stat')">Статистика</button>
 			</nav>
 		</div>
 	</header>
@@ -38,37 +36,69 @@
 			<div class="swiper-wrapper">
 				<div class="swiper-slide">
 					<div class="showup__container">
-						<img class="showup__container__logo" src="/assets/vareLogo.svg" alt="">
+						<img class="showup__container__logo" src="/assets/images/showUp-logos__sdc.svg" alt="Логотип">
 						<div class="showup__container__card">
-							<h1 class="showup__container__card__h1">SD.C</h1>
+							<h1 class="showup__container__card__h1">Мониторинг серверов</h1>
 							<article class="showup__container__card__article">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus animi atque debitis explicabo quam sequi totam velit voluptatum! Distinctio exercitationem fugit quae quia quod sunt. Culpa numquam quis reprehenderit.</p>
+								<p>Проект «Server-Discord.com» представляет из себя веб-сайт, размещающий у себя сервера пользователей программы Discord.</p>
 							</article>
 							<div class="showup__container__actions">
-								<a href="" class="showup__link">Перейти</a>
+								<a href="https://server-discord.com/" target="_blank" class="showup__link">Перейти</a>
 							</div>
 						</div>
 					</div>
-					<img class="showup__img" src="/assets/sdc-head.png" alt="">
+					<img class="showup__img" src="/assets/images/showUp-bg__sdc.png" alt="">
 				</div>
 				<div class="swiper-slide">
 					<div class="showup__container">
 						<img class="showup__container__logo" src="/assets/vareLogo.svg" alt="">
 						<div class="showup__container__card">
-							<h1 class="showup__container__card__h1">VARE</h1>
+							<h1 class="showup__container__card__h1">Мониторинг ботов</h1>
 							<article class="showup__container__card__article">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus animi atque debitis explicabo quam sequi totam velit voluptatum! Distinctio exercitationem fugit quae quia quod sunt. Culpa numquam quis reprehenderit.</p>
+								<p>Список ботов для Discord гильдий.</p>
 							</article>
 							<div class="showup__container__actions">
-								<a href="" class="showup__link">Перейти</a>
+								<a href="https://bots.server-discord.com/" target="_blank" class="showup__link">Перейти</a>
 							</div>
 						</div>
 					</div>
-					<img class="showup__img" src="/assets/banner.png" alt="">
+					<img class="showup__img" src="/assets/images/showUp-bg__bsdc.png" alt="">
+				</div>
+				<div class="swiper-slide">
+					<div class="showup__container">
+						<img class="showup__container__logo" src="/assets/vareLogo.svg" alt="">
+						<div class="showup__container__card">
+							<h1 class="showup__container__card__h1">Whooves</h1>
+							<article class="showup__container__card__article">
+								<p>Полезный бот с утилитами для Discord гильдии.</p>
+							</article>
+							<div class="showup__container__actions">
+								<a href="https://discord.com/oauth2/authorize?client_id=531094088695414804&scope=bot+applications.commands&permissions=435547222" target="_blank" class="showup__link">Пригласить</a>
+								<a href="https://github.com/vare-team/whooves" target="_blank" class="showup__link-additional">Github</a>
+							</div>
+						</div>
+					</div>
+					<img class="showup__img" src="/assets/images/showUp-bg__bsdc.png" alt="">
+				</div>
+				<div class="swiper-slide">
+					<div class="showup__container">
+						<img class="showup__container__logo" src="/assets/vareLogo.svg" alt="">
+						<div class="showup__container__card">
+							<h1 class="showup__container__card__h1">Nika</h1>
+							<article class="showup__container__card__article">
+								<p>Бот, защищающий сервера от набега спамеров.</p>
+							</article>
+							<div class="showup__container__actions">
+								<a href="https://discord.com/oauth2/authorize?client_id=531094088695414804&scope=bot+applications.commands&permissions=435547222" target="_blank" class="showup__link">Пригласить</a>
+								<a href="https://github.com/vare-team/whooves" target="_blank" class="showup__link-additional">Github</a>
+							</div>
+						</div>
+					</div>
+					<img class="showup__img" src="/assets/images/showUp-bg__bsdc.png" alt="">
 				</div>
 			</div>
 		</div>
-		<div class="shape-divider-bot fill--white">
+		<div class="shape-divider-bot fill--white" id="LINK_about">
 			<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
 				<path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
 			</svg>
@@ -76,7 +106,7 @@
 	</section>
 	<section class="section">
 		<div class="section-unit" style="margin-top: -120px;">
-			<h2 class="section__h element-animation">#О_Нас</h2>
+			<h2 class="section__h element-animation">О Нас</h2>
 			<div class="section__combinator">
 				<article class="section__article element-animation">
 					<h3>Заголовок</h3>
@@ -89,7 +119,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="section section--stuff">
+	<section class="section section--stuff" id="LINK_team">
 		<div class="shape-divider-top fill--white">
 			<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
 				<path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
@@ -98,7 +128,7 @@
 			</svg>
 		</div>
 		<div class="section-unit">
-			<h2 class="section__h element-animation">#Команда</h2>
+			<h2 class="section__h element-animation">Команда</h2>
 			<div class="section__combinator">
 				<article class="section__article element-animation">
 					<h3>Заголовок</h3>
@@ -111,14 +141,14 @@
 			</div>
 		</div>
 	</section>
-	<section class="section section--stat">
+	<section class="section section--stat" id="LINK_stat">
 		<div class="shape-divider-top fill--blue">
 			<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
 				<path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
 			</svg>
 		</div>
 		<div class="section-unit">
-			<h2 class="section__h element-animation">#Статистика</h2>
+			<h2 class="section__h element-animation">Статистика</h2>
 			<div class="section__combinator">
 				<article class="section__article element-animation">
 					<h3>Заголовок</h3>
@@ -138,7 +168,7 @@
 			</svg>
 		</div>
 		<div class="section-unit divider">
-			<h2 class="section__h element-animation">#Дискорд</h2>
+			<h2 class="section__h element-animation">Дискорд</h2>
 			<div class="section__combinator">
 				<article class="section__article element-animation">
 					<h3>Заголовок</h3>
@@ -156,17 +186,29 @@
 			</div>
 		</div>
 	</section>
-	<footer class="footer">
-		<div class="footer__container element-animation">
-			<section class="footer__section">
-				footer
-			</section>
-			<section class="footer__section">
-				footer
-			</section>
-			<section class="footer__section">
-				footer
-			</section>
+	<footer class="footer-container">
+		<div class="footer__block">
+			<h3 class="footer__block__h">Vare</h3>
+			<article>
+				VaRe это команда, которая разрабатывает OpenSource проекты, Discord ботов и многое другое.
+			</article>
+		</div>
+		<div class="footer__block">
+			<h4 class="footer__block__h">Ссылки</h4>
+			<article class="footer__block__article">
+				<ul class="footer__block__article__ul">
+					<li class="footer__block__article__ul__li"><a href="https://discord.com/invite/8KKVhTU" target="_blank" class="footer__block__article__ul__li__a">Discord Сервер</a></li>
+					<li class="footer__block__article__ul__li"><a href="https://github.com/vare-team" target="_blank" class="footer__block__article__ul__li__a">Github</a></li>
+				</ul>
+			</article> </div>
+		<div class="footer__block">
+			<h4 class="footer__block__h">Контакты</h4>
+			<article class="footer__block__article">
+				<ul class="footer__block__article__ul">
+					<li class="footer__block__article__ul__li"><a href="mailto:support@sdc.su" class="footer__block__article__ul__li__a">support@sdc.su</a></li>
+					<li class="footer__block__article__ul__li"><a href="mailto:support@vare.pw" class="footer__block__article__ul__li__a">support@vare.pw</a></li>
+				</ul>
+			</article>
 		</div>
 	</footer>
 	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

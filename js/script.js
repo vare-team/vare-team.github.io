@@ -6,9 +6,19 @@ function onEntry(entry) {
 	});
 }
 
+function scrollToElement(element) {
+	document.getElementById(element).scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+}
+
 const swiper = new Swiper('.swiper', {
-	speed: 1000,
-	spaceBetween: 0,
+	autoplay: {
+		delay: 10000,
+	},
+	effect: 'fade',
+	fadeEffect: {
+		crossFade: true
+	},
+	speed: 2000,
 	loop: true,
 	navigation: {
 		nextEl: '.swiper-button-next',
