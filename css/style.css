@@ -104,6 +104,9 @@ body {
 .section__article > p {
     margin: 0;
 }
+.section__article__h3 {
+    font-size: 1.7rem;
+}
 .section__ul {
     margin: 0;
     padding: 0;
@@ -120,7 +123,6 @@ body {
     content: '.'
 }
 .section__ul > li > a {
-    color: white;
     text-decoration: none;
     font-weight: 600;
 }
@@ -132,10 +134,10 @@ body {
     justify-content: space-between;
 }
 .section__img {
-    width: 15rem;
-    height: 15rem;
+    width: 10rem;
+    height: 10rem;
     object-fit: cover;
-    border-radius: 3rem;
+    border-radius: 2rem;
     margin-left: 15rem;
     display: block;
 }
@@ -148,6 +150,7 @@ body {
 }
 .section__state {
     font-weight: 600;
+    opacity: .65;
 }
 .section-showup {
     width: 100vw;
@@ -300,6 +303,7 @@ body {
     text-decoration: underline;
 }
 .section--stuff {
+    padding: 3rem 0 9rem 0;
     color: white;
     background: rgb(9,9,121);
     background: linear-gradient(0, rgba(9,9,121,1) 0%, rgba(135,5,193,1) 100%);
@@ -310,6 +314,13 @@ body {
 .section--discord {
     color: white;
     background-color: #232323;
+}
+.box {
+    background-color: white;
+    border-radius: 2rem;
+    padding: 1.5rem 2rem;
+    color: black;
+    margin: 1rem 0;
 }
 
 .shape-divider-bot {
@@ -347,6 +358,9 @@ body {
 }
 .fill--blue > svg {
     fill: #2bbbe5;
+}
+.fill--gray > svg {
+    fill: #232323;
 }
 .fill--black > svg {
     fill: #101010;

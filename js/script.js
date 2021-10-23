@@ -10,6 +10,9 @@ function scrollToElement(element) {
 	document.getElementById(element).scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
 }
 
+const observer = new IntersectionObserver(onEntry, { threshold: [0.25] });
+document.querySelectorAll('.element-animation').forEach(e => observer.observe(e))
+
 const swiper = new Swiper('.swiper', {
 	autoplay: {
 		delay: 10000,
@@ -25,10 +28,3 @@ const swiper = new Swiper('.swiper', {
 		prevEl: '.swiper-button-prev',
 	},
 });
-
-let observer = new IntersectionObserver(onEntry, { threshold: [0.25] });
-let elements = document.querySelectorAll('.element-animation');
-
-for (let elm of elements) {
-	observer.observe(elm);
-}
