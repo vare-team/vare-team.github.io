@@ -1,35 +1,30 @@
-window.onload = function() {
-	let header = document.getElementById('header'),
-			headernav = document.getElementById('header-nav'),
-			mobilebutton = document.getElementById('mobile-menu');
-
-
-	window.addEventListener('click', function({target}){
-		if (mobilebutton.contains(target)){
-			toggleHamburger();
-		} else {
-			removeHamburger();
+function onEntry(entry) {
+	entry.forEach(change => {
+		if (change.isIntersecting) {
+			change.target.classList.add('element-show');
 		}
 	});
+}
 
+function scrollToElement(element) {
+	document.getElementById(element).scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+}
 
-	function toggleHamburger(){
-		headernav.classList.toggle("showNav");
-		header.classList.toggle("header-background");
-	}
-	function removeHamburger(){
-		headernav.classList.remove("showNav");
-		header.classList.remove("header-background");
-	}
+const observer = new IntersectionObserver(onEntry, { threshold: [0.25] });
+document.querySelectorAll('.element-animation').forEach(e => observer.observe(e))
 
-
-	if (window.scrollY > 25) header.classList.add("header-scrolled");
-
-	window.addEventListener('scroll', function() {
-		if (window.scrollY > 25) {
-			header.classList.add("header-scrolled")
-		} else {
-			header.classList.remove("header-scrolled");
-		}
-	});
-};
+const swiper = new Swiper('.swiper', {
+	autoplay: {
+		delay: 10000,
+	},
+	effect: 'fade',
+	fadeEffect: {
+		crossFade: true
+	},
+	speed: 1000,
+	loop: true,
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+});
