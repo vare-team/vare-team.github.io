@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VARE — Privacy Policy</title>
+  <style>body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; padding: 1em; max-width: 850px; margin: auto; line-height: 1.6; } h1 { font-size: 1.6em; } h2 { font-size: 1.2em; }</style>
+</head>
+<body>
+  <h1>Privacy Policy — VARE</h1>
+  <p>Last updated: November 23, 2026.</p>
+  <p>Vare operates the VARE Discord bot (application ID 738036717625540668) for community administration and publication sharing. This policy describes the information processed by the bot and how to contact us about it.</p>
+
+  <h2>Information Collection and Use</h2>
+  <ul>
+    <li><strong>Booster roles:</strong> the bot processes Discord member IDs, membership and roles and checks existing SDC database records linking server owners to active SDC boosts. It assigns or removes the configured booster role on member join and during scheduled synchronisation. These are SDC service boosts, not Discord Nitro boosts. The bot does not process payment-card details for this check.</li>
+    <li><strong>Member lists:</strong> the bot retrieves members and their roles to synchronise booster eligibility and generate the staff schedule. It uses staff and group roles to list the relevant members in command responses.</li>
+    <li><strong>Publication content:</strong> new message text in specifically configured Discord channels is processed for automatic publication to the configured Telegram and VK destinations. Text containing <code>#sdc</code> can also be forwarded or reposted to the configured SDC destinations.</li>
+    <li><strong>Reactions:</strong> channel and message identifiers are used to add configured reactions to messages in selected channels.</li>
+    <li><strong>Report counts:</strong> the reports command reads message history in the configured reports channel and uses author IDs and creation dates to calculate per-author counts for the current and previous month. It does not need report message bodies for this calculation.</li>
+    <li><strong>Operational information:</strong> service status, posting results, error information and relevant identifiers may be processed in technical logs for operation and troubleshooting.</li>
+  </ul>
+  <p>The bot does not need users' online status or presence/activity data for these functions. Message content is not used to train AI or machine learning models.</p>
+
+  <h2>Storage and Disclosure</h2>
+  <p>SDC owner identifiers and boost status are read from an existing database outside Discord. The bot's role-checking code does not create a separate permanent membership database. Member lists, roles and report counts are processed in memory; schedule and report results are posted in Discord and are visible according to the destination channel's permissions.</p>
+  <p>Publication text is sent outside Discord to Telegram and VK through their APIs. Those services store and display the resulting posts according to their own policies and the destination's visibility settings. Published text can include links, names or other personal information if the author includes them in the message. The posting code sends the message text rather than separately exporting the author's Discord profile or the server's member list.</p>
+  <p>This publication feature is limited to configured source channels. It does not automatically publish every conversation in the server. Posts in the destination communities or channels may be publicly accessible. We do not sell user data or use message content for advertising targeting.</p>
+
+  <h2>Retention and Deletion</h2>
+  <p>The bot does not maintain its own permanent archive of forwarded message bodies. Copies posted to Telegram or VK, Discord command responses and existing SDC database records may remain for more than 30 days. There is no universal automatic 30-day deletion rule.</p>
+  <p>Editing or deleting the source Discord message does not automatically edit or delete copies already published to Telegram or VK. Removing the bot does not remove those copies or existing SDC records.</p>
+  <p>For access or deletion requests, contact us below with the relevant Discord user ID and, where applicable, server ID or message/post links. We may ask for information needed to verify your request. We will review the request and explain any limitations, including records associated with the SDC service and copies controlled by another platform or its users.</p>
+
+  <h2>Controls and Security</h2>
+  <p>The bot operator configures the publication channels, destinations and role mappings. There is no per-message or per-user opt-out switch for automatic forwarding within a configured publication channel. Contact the community administrators before posting there if you do not want your text published to the configured destinations.</p>
+  <p>We restrict administrative access to the bot and its database connections. No method of transmission or storage is completely secure. Do not include passwords, access tokens or other secrets in publication channels or support requests.</p>
+
+  <h2>Changes to This Policy</h2>
+  <p>Updates will be published on this page with a revised date as the service or its data practices change.</p>
+
+  <h2>Contact Us</h2>
+  <p>For privacy questions or data requests, email <a href="mailto:privacy@vare.pw">privacy@vare.pw</a> or contact us through the <a href="https://discord.gg/8KKVhTU">Vare support server</a>.</p>
+</body>
+</html>
